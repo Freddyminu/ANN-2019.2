@@ -16,7 +16,8 @@ double lagrange::i(double *vetX,double *vetY,int tam, int loc){
     */
     for(int l=0;l<tam-1;l++){
         newVetY[l] = (vetY[l+1]-vetY[l])/(vetX[l+1+loc]-vetX[l]);
-        std::cout << newVetY[l] << " ";
+        if(l==0)
+            std::cout << newVetY[l] << " ";
     }
     std::cout << std::endl;
     /*
