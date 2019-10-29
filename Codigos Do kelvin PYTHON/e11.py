@@ -3,6 +3,8 @@ from sympy import *
 init_printing()
 import math
 
+// nao eh a 13 de 2019.2 no casoo.....
+
 x = symbols('x') #define x como variável simbólica.
 
 def f(x):
