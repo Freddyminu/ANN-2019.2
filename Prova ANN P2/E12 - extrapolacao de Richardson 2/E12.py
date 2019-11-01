@@ -5,6 +5,7 @@ N = [[0.11512898910246] , [0.23860355631615] ,
 grau = 6
 b = 2
 
+# nesse queremos ordem 12 e temos 6 pontos, entao 12 = 6*b, logo b = 2....
 for i in range (grau - 1):
     for j in range (grau - i - 1):
         N[j].append( ( ( 2**(i*b + b) * N[j + 1][i] ) - N[j][i]) / (2**(i*b + b) - 1) )
